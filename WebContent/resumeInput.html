@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>이력서 작성하기</h3>
+<form method="post" action="resumeReg">
+	<p>이름</p>
+	<input type="text" name="name" placeholder="이름을 입력해 주세요">
+	
+	<p>희망직무</p>
+	<input type="checkbox" name="duties" value="webdeveloper">웹개발<br/>	
+	<input type="checkbox" name="duties" value="application">응용프로그램개발<br/>
+	<input type="checkbox" name="duties" value="analysis">시스템 분석 및 설계<br/>
+	<input type="checkbox" name="duties" value="publishing">퍼블리싱 및 UI개발<br/>
+		
+	<p>경력여부</p>
+	<input type="radio" name="career" value="no">신입
+	<input type="radio" name="career" value="yes">경력
+	
+	<p>희망연봉</p>	
+	<select name="salary">
+        <option value="0">회사내규에 따름</option>
+        <option value="2400+">2,400만원이상 </option>
+        <option value="2600+">2,600만원이상 </option>
+        <option value="2800+">2,800만원이상 </option>
+     </select>
+	
+	<p>자기소개</p>
+	<textarea name="introduce" placeholder="자기소개를 입력해주세요" cols="30" rows="4"></textarea>
+	<br/>
+	
+	<input type="submit" value="전송">
+	
+</form>
+</body>
+</html>
